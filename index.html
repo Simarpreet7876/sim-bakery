@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const productLinks = document.querySelectorAll('.product-link a');
+        productLinks.forEach(link => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetUrl = link.getAttribute('href');
+            window.location.href = targetUrl;
+          });
+        });
+      </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Delights</title>
+  <style>
+
+    body {
+      background-image: url('C:\\Users\\simar\\Downloads\\images.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f8f8f8; /* Light gray background for navigation bar */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    }
+
+    li {
+      float: left;
+      border-right: 1px solid #ddd; /* Light gray border between navigation items */
+    }
+
+    li a {
+      display: block;
+      color: #333; /* Dark gray text color for navigation items */
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s; /* Smooth transition on hover */
+    }
+
+    li a:hover {
+      background-color: #ddd; /* Light gray background on hover */
+    }
+
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      color: #fff;
+      text-align: center;
+      font-family: "Copperplate", fantasy;
+      font-size: 60px;
+      border-style: solid;
+      border-width: 5px;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      margin: 20px;
+      text-align: center;
+      color: #fff;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 25px;
+      border-width: 3px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); 
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+    }
+
+    h3 {
+      letter-spacing: 3px;
+      color: #fff;
+      text-align: center;
+      font-family: "Copperplate", fantasy;
+      font-size: 30px;
+      text-decoration: underline;
+      margin-top: 20px;
+    }
+
+    div.gallery {
+      margin: 20px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 360px;
+      transition: transform 0.3s; 
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+      transform: scale(1.05); 
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: 240px; 
+      object-fit: cover; 
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.8); 
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="products.html">PRODUCTS</a></li>
+    <li><a href="contacts.html">CONTACT</a></li>
+  </ul>
+  <h2>SWEET DELIGHTS</h2>
+  <h1>Welcome to Sweet Delights</h1>
+  <h3>FEATURED PRODUCTS</h3>
+
+  <a href="chocolate-cake.html" class="gallery-link">
+    <div class="gallery">
+      <img src="cake.jpg" alt="CHOCOLATE CAKE">
+      <div class="desc">CHOCOLATE CAKE</div>
+    </div>
+  </a>
+
+  <a href="chocolate-croissants.html" class="gallery-link">
+    <div class="gallery">
+      <img src="Croissant.jpg" alt="CHOCOLATE CROISSANTS">
+      <div class="desc">CHOCOLATE CROISSANTS</div>
+    </div>
+  </a>
+
+  <a href="donuts.html" class="gallery-link">
+    <div class="gallery">
+      <img src="donut.jpg" alt="DONUTS">
+      <div class="desc">DONUTS</div>
+    </div>
+  </a>
+
+  <a href="cookies.html" class="gallery-link">
+    <div class="gallery">
+      <img src="cookies.jpg" alt="COOKIES">
+      <div class="desc">COOKIES</div>
+    </div>
+  </a>
+
+  <script>
+    const galleryLinks = document.querySelectorAll('.gallery-link');
+    galleryLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetUrl = link.getAttribute('href');
+        window.location.href = targetUrl;
+      });
+    });
+  </script>
+</body>
+</html>
